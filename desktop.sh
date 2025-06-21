@@ -6,6 +6,9 @@ apt install -y gnome-shell gnome-terminal curl fastfetch gnome-disk-utility mang
 # Cleanup bloat from gnome-shell
 apt -y remove malcontent yelp nm-connection-editor im-config
 
+# Setup minimize and maximize buttons on windows
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
 # Setup aliases in .bashrc
 echo 'alias ll="ls -la"' >> ~/.bashrc
 
