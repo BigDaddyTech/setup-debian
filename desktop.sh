@@ -26,6 +26,11 @@ discord_url="https://discord.com/api/download?platform=linux&format=deb"
 curl -L -o /tmp/discord.deb $discord_url
 apt install -y /tmp/discord.deb
 
+# Install OnlyOffice
+wget https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb
+apt install -y ./onlyoffice-desktopeditors_amd64.deb
+rm -f ./onlyoffice-desktopeditors_amd64.deb
+
 # Install VSCodium
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
 echo 'deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg] https://download.vscodium.com/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
