@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install GNOME and other utilities
-apt install -y gnome-shell gnome-terminal curl fastfetch gnome-disk-utility mangohud tree gnome-calculator gnome-software wine git arduino
+apt install -y gnome-shell gnome-terminal curl fastfetch gnome-disk-utility evince eog mangohud tree gnome-calculator gnome-software wine git arduino
 
 # Cleanup bloat from gnome-shell
 apt -y remove malcontent yelp nm-connection-editor im-config
