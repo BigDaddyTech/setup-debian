@@ -41,5 +41,7 @@ apt install -y codium
 add-apt-repository ppa:freecad-maintainers/freecad-stable
 apt update -y
 apt install -y freecad
+# TODO: Make this permanent
+export COIN_GL_NO_CURRENT_CONTEXT_CHECK=1
 
 # TODO: Remove wifi entries from /etc/network/interfaces
