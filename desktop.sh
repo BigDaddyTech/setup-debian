@@ -41,3 +41,5 @@ apt install -y codium
 add-apt-repository ppa:freecad-maintainers/freecad-stable
 apt update -y
 apt install -y freecad
+
+# TODO: Remove wifi entries from /etc/network/interfaces
